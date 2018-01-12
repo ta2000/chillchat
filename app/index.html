@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <link href="/libs/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/app.css" rel="stylesheet" type="text/css" />
+    <script src="/libs/js/mui.min.js"></script>
+    <script src="/libs/js/upup.min.js"></script>
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <ul class="mui-tabs__bar mui-tabs__bar--justified menu">
+        <li>
+          <a data-mui-toggle="tab"
+            data-mui-controls="pane-justified-1">&#x1F4AC;</a>
+        </li>
+        <li class="mui--is-active">
+          <a data-mui-toggle="tab"
+            data-mui-controls="pane-justified-2">&#x1F4F7;</a>
+        </li>
+        <li>
+          <a data-mui-toggle="tab"
+            data-mui-controls="pane-justified-3">&#x1F465;</a>
+        </li>
+      </ul>
+      <div class="mui-tabs__pane" id="pane-justified-1">
+        <div id="content" class="mui-container-fluid">
+          <div class="mui-row">
+            <div class="mui-col-sm-10 mui-col-sm-offset-1">
+              <br>
+              <br>
+              <div class="mui--text-dark-secondary mui--text-body2">PINNED POST</div>
+              <div class="mui-divider"></div>
+              <br>
+              <!-- blog goes here -->
+              <br>
+              <br>
+              <div class="mui--text-dark-secondary mui--text-body2">RECENT POSTS</div>
+              <div class="mui-divider"></div>
+              <br>
+              <!-- blog goes here -->
+              <br>
+              <!-- blog goes here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mui-tabs__pane mui--is-active" id="pane-justified-2">
+        <button class="mui-btn mui-btn--primary" onclick="activateModal()">Activate modal</button>
+      </div>
+      <div class="mui-tabs__pane" id="pane-justified-3">
+      </div>
+    </div>
+  </body>
+</html>
